@@ -17,7 +17,7 @@ style.css
 To clone this repository, open your terminal and run the following command:
 
 ```bash
-git clone https://github.com/your-username/repository-name.git
+https://github.com/CSI-DMCE-2024/Doctor-UI.git
 
 
 How to Run the Project
