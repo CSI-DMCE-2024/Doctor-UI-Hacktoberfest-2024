@@ -91,9 +91,9 @@ ul {
   display: flex;
 }
 
-.content .content-wrapper .button-wrapper .button.ask {
+/* .content .content-wrapper .button-wrapper .button.ask {
   background: rgba(0, 0, 0, 0.4);
-}
+} */
 .content .content-wrapper .button-wrapper .button span {
   margin-left: 20px;
 }
@@ -135,6 +135,23 @@ ul {
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.button-wrapper .button {
+  background-color: #008080; /* Set the desired background color */
+  color: white;
+  padding: 20px 20px;
+  border: 1px solid #fff;
+  padding: 15px 30px;
+  border-radius: 15px; 
+  margin-right: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-wrapper .button:hover {
+  background-color: #383838;
+  color: #fff;
 }
 
 #social-media {
