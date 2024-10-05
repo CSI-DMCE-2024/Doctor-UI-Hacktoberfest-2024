@@ -12,6 +12,12 @@ a {
   color: black;
 }
 
+img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
