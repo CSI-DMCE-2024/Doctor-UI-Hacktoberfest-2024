@@ -141,6 +141,7 @@ ul {
   background-color: #008080; /* Set the desired background color */
   color: white;
   padding: 20px 20px;
+
   border: 1px solid #fff;
   padding: 15px 30px;
   border-radius: 15px; 
@@ -150,6 +151,7 @@ ul {
 }
 
 .button-wrapper .button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   background-color: #383838;
   color: #fff;
 }
