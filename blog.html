@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles to enhance the blog page */
+        #blog-articles {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+
+        .blog-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .blog-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex: 1 1 30%; /* Each blog item takes up to 30% of the row */
+            max-width: 30%;
+            transition: transform 0.2s;
+        }
+
+        .blog-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-item h3 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .blog-item p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Navbar styles */
+        header {
+            padding: 10px 0; /* Reduced height */
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Vertically center items */
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #0056b3;
+        }
+
+        #signup {
+            padding: 40px 0;
+            text-align: center;
+            background-color: #e9ecef;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        #signup .slug {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        #signup .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        #signup .button-wrapper {
+            margin-top: 20px;
+        }
+
+        #signup .highlight {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #signup .highlight:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<section class="main-header">
+  <div class="overlay">
+    <div class="container">
+      <header>
+        <h1>Logo</h1>
+        <div class="nav">
+          <a class="active" href="blog.html">Blog</a>
+          <a href="register.html">Register</a>
+          <a href="login.html">Login</a>
+        </div>
+        <div class="menu"><i class="fa fa-bars"></i></div>
+      </header>
+      <div class="content">
+        <div class="content-wrapper">
+          <h1 class="blob">Our Medical Blog</h1>
+          <div class="content">Stay updated with the latest trends, tips, and health information from our certified medical experts. Our blog covers a variety of topics to help you lead a healthier life.</div>
+          <div class="button-wrapper">
+            <div class="button ask">Explore Articles</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="blog-articles">
+  <div class="container">
+    <div class="title"><h2>Latest Articles</h2></div>
+    
+    
+    <!-- Blog Articles List -->
+    <div class="blog-list">
+      <div class="blog-item">
+        <h3>Understanding Common Health Symptoms</h3>
+        <p>Learn to identify and manage common health symptoms before they become serious issues. Early detection is key to prevention.</p>
+      </div>
+      <div class="blog-item">
+        <h3>Top 10 Nutrition Tips for a Healthy Life</h3>
+        <p>Discover how a balanced diet can improve your overall well-being, increase your energy levels, and boost your immune system.</p>
+      </div>
+      <div class="blog-item">
+        <h3>Managing Stress: A Doctor's Perspective</h3>
+        <p>Explore effective techniques to reduce stress, enhance mental health, and improve your daily life from a medical point of view.</p>
+      </div>
+      <div class="blog-item">
+        <h3>How Sleep Affects Your Health</h3>
+        <p>Understand the critical role of sleep in maintaining your physical and mental health, and discover tips for better sleep hygiene.</p>
+      </div>
+      <div class="blog-item">
+        <h3>The Importance of Regular Check-Ups</h3>
+        <p>Regular health check-ups can help detect problems early when treatment is likely to work best. Learn why they matter.</p>
+      </div>
+      <div class="blog-item">
+        <h3>Staying Active: Benefits of Exercise</h3>
+        <p>Discover the benefits of staying physically active and how exercise can contribute to your overall health and well-being.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="signup">
+  <div class="slug">Ready to take the next step?</div>
+  <div class="title">Subscribe to our Blog for the Latest Updates!</div>
+  <div class="content">Stay in touch with our blog and get notified of new articles, tips, and health advice directly in your inbox.</div>
+  <div class="button-wrapper">
+    <button class="highlight">Subscribe Now</button>
+  </div>
+</section>
+
+<section id="social-media">
+  <!-- Social media section can be added here if needed -->
+</section>
+
+</body>
+</html>
