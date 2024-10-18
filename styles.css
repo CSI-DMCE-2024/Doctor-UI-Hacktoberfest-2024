@@ -43,7 +43,29 @@ ul {
   background: rgba(62, 209, 204, 0.9);
   padding: 0px 0px 80px 0px;
 }
+@media only screen and (max-width: 750px) {
+  header{ 
+    display: flex;
+    flex-direction: column;
+  }
+  .nav{
+    color: black;
+  }
+  .main-header{
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    width: 100vw;
+    height: 100vh;
+  }
+  .intro{
+    display: flex;
+    flex-direction: column;
+  }
+  .title{
 
+  }
+  }
 .container header {
   display: flex;
   justify-content: space-between;
@@ -388,7 +410,8 @@ ul {
     display: none;
   }
   .main-header .nav {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
   .main-header .menu {
     display: block;
@@ -400,18 +423,20 @@ ul {
     width: 40px;
   }
   .main-header .container .logo span {
-    font-size: 30px;
+    font-size: 40px;
     margin-left: 10px;
   }
   .main-header .content .content-wrapper .blob {
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
   }
   .main-header .content .content-wrapper .button-wrapper {
     justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
   .main-header .content .content-wrapper .button-wrapper .button {
-    font-size: 10px;
+    font-size: 20px;
     padding: 20px 10px;
   }
 
@@ -432,6 +457,12 @@ ul {
 
   #how-it-works {
     padding: 40px 20px;
+  }
+  #how-it-works .container .intro{
+    color: black;
+  }
+  #how-it-works .container .intro span{
+    color: black;
   }
   #how-it-works .intro {
     font-size: 20px;
@@ -475,9 +506,11 @@ ul {
   }
   #question .title {
     font-size: 30px;
+    color: black;
   }
   #question .content {
     max-width: 450px;
+    color: black;
     font-size: 16px;
     margin-bottom: 30px;
   }
