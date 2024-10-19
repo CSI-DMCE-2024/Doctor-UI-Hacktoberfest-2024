@@ -88,5 +88,16 @@
 <section id="social-media">
   <!-- Social media section can be added here if needed -->
 </section>
+<script>document.addEventListener("DOMContentLoaded", function() {
+  // Select the hamburger menu icon and navigation
+  const menuIcon = document.querySelector(".main-header .menu i");
+  const navLinks = document.querySelector(".main-header .nav");
+
+  // Add click event listener to the menu icon
+  menuIcon.addEventListener("click", function() {
+    navLinks.classList.toggle("active"); // Toggle the active class to show/hide nav
+  });
+});
+</script>
 </body>
 </html>
