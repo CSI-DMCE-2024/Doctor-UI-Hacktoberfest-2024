@@ -23,6 +23,79 @@ ul {
   max-width: 90%;
   margin: 0 auto;
 }
+/* Navbar Styles */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0e4c92; /* Example color */
+  padding: 10px 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+}
+
+/* Navbar Links */
+.nav {
+  display: flex; /* Initially show on larger screens */
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 15px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Toggle Button */
+.nav-toggle {
+  display: none; /* Hide by default */
+  cursor: pointer;
+}
+
+/* New Navbar Toggle Styles */
+.nav {
+  display: none; /* Initially hide the nav */
+  flex-direction: column; /* Stack links vertically */
+  position: absolute; /* Position it over the content */
+  top: 100%; /* Align it below the header */
+  right: 0; /* Align to the right */
+  background: rgba(62, 209, 204, 0.9); /* Background color */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+.nav.active {
+  display: flex; /* Show the nav when active */
+}
+
+/* Media Queries */
+@media (max-width: 750px) {
+  .nav {
+      display: none; /* Ensure nav is hidden initially */
+  }
+
+  /* Show toggle button on mobile */
+  .nav-toggle {
+      display: block; /* Show toggle button on smaller screens */
+      background: transparent; /* Customize as needed */
+      border: none; /* Remove default border */
+      color: white; /* Text color */
+      font-size: 24px; /* Font size */
+  }
+
+  /* Change header layout for mobile */
+  .main-header {
+      flex-direction: row;
+      justify-content: space-between; /* Adjust layout */
+  }
+}
 
 .main-header {
   position: relative;
@@ -535,3 +608,4 @@ ul {
     margin: 0px 5px;
   }
 }
+
