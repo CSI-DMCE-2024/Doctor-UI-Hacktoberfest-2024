@@ -661,3 +661,34 @@ ul {
   }
 }
 
+
+
+@media (max-width: 750px) {
+  .main-header .nav {
+    display: none;  /* Hide nav links by default */
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+  }
+
+  .main-header .nav a {
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .main-header .menu {
+    display: block;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* Styles to show the menu when toggled */
+.nav.active {
+  display: block !important; /* Shows the navigation links when active */
+}
